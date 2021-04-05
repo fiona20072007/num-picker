@@ -1,0 +1,27 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+@mixin btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid gray;
+    margin: 5px;
+    border-radius: 5px;
+}
+.btnOn {
+    background-color: lightpink;
+    color: white;
+    @include btn;
+}
+.btn {
+    background-color: white;
+    @include btn;
+}
+.resetBtn {
+    @include btn;
+    width: 60px;
+    margin-left: 20px;
+    background-color: palevioletred;
+    color: white;
+}
